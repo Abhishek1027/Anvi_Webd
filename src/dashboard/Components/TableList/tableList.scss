@@ -1,0 +1,45 @@
+.robot-control {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: auto;
+
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+
+    .btn {
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+
+      &.stop {
+        background-color: red;
+
+        &:hover {
+          background-color: darkred;
+        }
+      }
+    }
+  }
+}

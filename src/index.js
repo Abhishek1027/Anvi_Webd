@@ -1,11 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { ColorContextProvider } from "./dashboard/ColorContext/darkContext"; // Ensure correct path
+import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
-    <App />
+    <ColorContextProvider>
+      <BrowserRouter>
+        {" "}
+        {/* ✅ This should be the ONLY <BrowserRouter> in the app */}
+        <App />
+      </BrowserRouter>
+    </ColorContextProvider>
   </React.StrictMode>,
-  document.getElementById('root')
 );

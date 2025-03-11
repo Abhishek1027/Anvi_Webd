@@ -10,9 +10,26 @@ body {
 }
 
 .hero {
-  background: url(./images/hero-bg.svg) top center no-repeat;
+  background: url(./images/img1.png) top center no-repeat;
   background-size: cover;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
 }
+
+.hero h1{
+  color: black;
+}
+
+
+.hero #hero{
+  text-align: center;
+  justify-content: left;
+  margin-top: 80px;
+}
+
+
 
 .footer {
   background: url(./images/footer.svg) top center no-repeat;
