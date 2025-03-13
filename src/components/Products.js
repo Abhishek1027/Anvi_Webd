@@ -9,11 +9,11 @@ const Portfolio = () => {
   return (
     <>
       <div className="my-4 py-4" id="portfolio">
-        <h2 className="my-2 text-center text-3xl text-blue-900 uppercase font-bold">
+        <h2 className="my-2 text-center text-3xl text-cyan-500 uppercase font-bold">
           Products
         </h2>
         <div className="flex justify-center">
-          <div className="w-24 border-b-4 border-blue-900 mb-8"></div>
+          <div className="w-24 border-b-4 border-cyan-500 mb-8"></div>
         </div>
 
         <div className="px-4" data-aos="fade-down" data-aos-delay="600">
@@ -29,7 +29,7 @@ const Portfolio = () => {
                     href="/login"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-xl"
+                    className="text-white bg-cyan-600 hover:bg-teal-500 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-xl"
                   >
                     Get Access
                     <svg
@@ -60,7 +60,7 @@ const Portfolio = () => {
                     href="/login"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-xl"
+                    className="text-white bg-cyan-600 hover:bg-teal-500 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-xl"
                   >
                     Get Access
                     <svg
@@ -102,7 +102,7 @@ const Portfolio = () => {
                     href="/login"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-xl"
+                    className="text-white bg-cyan-600 hover:bg-teal-500 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-xl"
                   >
                     Get Access
                     <svg
@@ -133,7 +133,7 @@ const Portfolio = () => {
                     href="/login"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white bg-cyan-500 hover:bg-teal-500 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-xl"
+                    className="text-white bg-cyan-600 hover:bg-teal-500 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-xl"
                   >
                     Get Access
                     <svg

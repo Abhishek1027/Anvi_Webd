@@ -38,9 +38,17 @@ function Navbar() {
       <div className="navbar_main">
         <div className="menu_logo">
           {toggle ? (
-            <CloseIcon className="menu_icon" fontSize="small" onClick={handleToggle} />
+            <CloseIcon
+              className="menu_icon"
+              fontSize="small"
+              onClick={handleToggle}
+            />
           ) : (
-            <MenuIcon className="menu_icon" fontSize="small" onClick={handleToggle} />
+            <MenuIcon
+              className="menu_icon"
+              fontSize="small"
+              onClick={handleToggle}
+            />
           )}
 
           <Link to="/" style={{ textDecoration: "none" }}>
@@ -100,7 +108,8 @@ function Navbar() {
                   <p className="spann">Main</p>
                   <Link to="/" style={{ textDecoration: "none" }}>
                     <li>
-                      <DashboardIcon className="icon" fontSize="small" /> Dashboard
+                      <DashboardIcon className="icon" fontSize="small" />{" "}
+                      Dashboard
                     </li>
                   </Link>
 
@@ -113,12 +122,14 @@ function Navbar() {
 
                   <Link to="/products" style={{ textDecoration: "none" }}>
                     <li>
-                      <TableChartIcon className="icon" fontSize="small" /> Products
+                      <TableChartIcon className="icon" fontSize="small" />{" "}
+                      Products
                     </li>
                   </Link>
                   <Link to="/orders" style={{ textDecoration: "none" }}>
                     <li>
-                      <CreditCardIcon className="icon" fontSize="small" /> Orders
+                      <CreditCardIcon className="icon" fontSize="small" />{" "}
+                      Orders
                     </li>
                   </Link>
                   <li>
@@ -130,10 +141,12 @@ function Navbar() {
 
                   <p className="spann">Settings</p>
                   <li>
-                    <AccountCircleIcon className="icon" fontSize="small" /> Profile
+                    <AccountCircleIcon className="icon" fontSize="small" />{" "}
+                    Profile
                   </li>
                   <li>
-                    <SettingsRoundedIcon className="icon" fontSize="small" /> Setting
+                    <SettingsRoundedIcon className="icon" fontSize="small" />{" "}
+                    Setting
                   </li>
                   <li>
                     <LogoutIcon className="icon" fontSize="small" /> Log Out

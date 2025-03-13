@@ -9,7 +9,7 @@ function DataTable() {
         <h2 className="robot-name">My Robot</h2>
         <div className="feed-box">{/* Robot video feed will go here */}</div>
       </div>
-    </div>                                             
+    </div>
   );
 }
 

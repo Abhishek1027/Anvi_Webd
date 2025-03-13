@@ -12,7 +12,7 @@ import "./app.scss";
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
-      <Sidebar />  {/* ✅ Sidebar only appears once here */}
+      <Sidebar /> {/* ✅ Sidebar only appears once here */}
       <div className="dashboard-content">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ const Dashboard = () => {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:blogId" element={<BlogDetail />} />
           <Route path="/addnew" element={<AddNew />} />
-          
+
           {/* ✅ Redirect unknown dashboard routes to Home inside dashboard */}
           <Route path="*" element={<Navigate to="." />} />
         </Routes>
