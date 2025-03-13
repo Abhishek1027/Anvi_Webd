@@ -12,6 +12,8 @@ import Contact from "./pages/Contact";
 import DemoProduct from "./pages/DemoProduct";
 import Login from "./components/Login";
 import DashboardAuth from "./dashboard/DashboardAuth"; // ✅ Corrected import path
+import Controller from "./dashboard/Components/TableList/TableList";
+import Feed from "./dashboard/Components/DataTable/DataTable";
 
 // Dashboard Import
 
@@ -33,6 +35,8 @@ function App() {
 
         {/* Protected Dashboard Route */}
         <Route path="/dashboard/*" element={<DashboardAuth />} />
+        <Route path="/controll" element={<Controller />}></Route>
+        <Route path="/feed" element={<Feed />}></Route>
 
         {/* Redirect unknown routes to home */}
         <Route path="*" element={<Navigate to="/" />} />

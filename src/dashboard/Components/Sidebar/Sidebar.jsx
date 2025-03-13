@@ -27,29 +27,27 @@ function Sidebar() {
       <div className="links">
         <ul>
           <p className="spann">Main</p>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/dashboard" style={{ textDecoration: "none" }}>
             <li>
               <DashboardIcon className="icon" /> Dashboard
             </li>
           </Link>
 
           <p className="spann">lists</p>
-          <Link to="/users" style={{ textDecoration: "none" }}>
+          <Link to="/feed" style={{ textDecoration: "none" }}>
             <li>
               <PersonIcon className="icon" /> RobotFeed
             </li>
           </Link>
 
-          <Link to="/products" style={{ textDecoration: "none" }}>
+          <Link to="/controll" style={{ textDecoration: "none" }}>
             <li>
               <TableChartIcon className="icon" /> RobotControl
             </li>
           </Link>
-          <Link to="/orders" style={{ textDecoration: "none" }}>
-            <li>
-              <CreditCardIcon className="icon" /> Speed
-            </li>
-          </Link>
+          <li>
+            <CreditCardIcon className="icon" /> Speed
+          </li>
           <li>
             <CreditCardIcon className="icon" /> LidarData
           </li>
