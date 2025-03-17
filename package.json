@@ -30,11 +30,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --fix src" 
+    "lint": "eslint --fix src"
   },
   "eslintConfig": {
-    "extends": ["react-app", "react-app/jest", "prettier"],
-    "plugins": ["prettier"],
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
     "rules": {
       "prettier/prettier": "error",
       "no-unused-vars": "warn"

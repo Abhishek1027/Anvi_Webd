@@ -38,7 +38,10 @@ function Navbar() {
     <div className="navbar">
       <div className="navbar_main">
         <div className="menu_logo">
+<<<<<<< HEAD
           {/* Replace "anvi" text with the logo */}
+=======
+>>>>>>> a9329301900b8e981d51fa2c649256a2a09c89ec
           <Link to="/" style={{ textDecoration: "none" }}>
             <img
               src={Anvi} // Adjust path as needed

@@ -155,8 +155,8 @@ const Dashboard = () => {
           <Route index element={<Lists type="user" />} />
           <Route path=":userId" element={<Detail />} />
           <Route
-              path="addnew"
-              element={
+            path="addnew"
+            element={
               <AddNew inputs={blogInputs} titlee="Add New Blog" type="BLOG" />
             }
           />
@@ -187,11 +187,7 @@ const Dashboard = () => {
           <Route
             path="addnew"
             element={
-              <AddNew
-                inputs={blogInputs}
-                titlee="Add New Blog"
-                type="BLOG"
-              />
+              <AddNew inputs={blogInputs} titlee="Add New Blog" type="BLOG" />
             }
           />
         </Route>
@@ -200,4 +196,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Dashboard;
