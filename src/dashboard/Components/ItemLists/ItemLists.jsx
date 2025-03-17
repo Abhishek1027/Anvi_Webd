@@ -1,10 +1,9 @@
-import AttachMoneyOutlinedIcon from "@mui/icons-material/AttachMoneyOutlined";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import LocalGroceryStoreOutlinedIcon from "@mui/icons-material/LocalGroceryStoreOutlined";
-import PaidOutlinedIcon from "@mui/icons-material/PaidOutlined";
-import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import React from "react";
 import { Link } from "react-router-dom";
+import DeviceThermostatOutlinedIcon from "@mui/icons-material/DeviceThermostatOutlined"; // Temperature
+import BatteryChargingFullOutlinedIcon from "@mui/icons-material/BatteryChargingFullOutlined"; // Battery
+import SpeedOutlinedIcon from "@mui/icons-material/SpeedOutlined"; // Speed
+import RadarOutlinedIcon from "@mui/icons-material/Radar"; // LiDAR
 import "./itemlists.scss";
 
 function ItemLists({ type }) {
@@ -17,7 +16,7 @@ function ItemLists({ type }) {
         isMoney: false,
         count: 232,
         icon: (
-          <PermIdentityIcon
+          <DeviceThermostatOutlinedIcon
             style={{ color: "#FF74B1", backgroundColor: "#FFD6EC" }}
             className="icon"
           />
@@ -33,7 +32,7 @@ function ItemLists({ type }) {
         isMoney: false,
         count: 34,
         icon: (
-          <LocalGroceryStoreOutlinedIcon
+          <BatteryChargingFullOutlinedIcon
             style={{ color: "#AC7088", backgroundColor: "#FFF38C" }}
             className="icon"
           />
@@ -49,7 +48,7 @@ function ItemLists({ type }) {
         isMoney: false,
         count: 107,
         icon: (
-          <AttachMoneyOutlinedIcon
+          <SpeedOutlinedIcon
             style={{ color: "#367E18", backgroundColor: "#A7FFE4" }}
             className="icon"
           />
@@ -61,16 +60,16 @@ function ItemLists({ type }) {
 
     case "balance":
       data = {
-        title: "Lidar",
+        title: "LiDAR",
         isMoney: false,
         count: 444,
         icon: (
-          <PaidOutlinedIcon
+          <RadarOutlinedIcon
             style={{ color: "#AC7088", backgroundColor: "#B1B2FF" }}
             className="icon"
           />
         ),
-        link: "See Lidar Data",
+        link: "See LiDAR Data",
         linkto: "/lidar",
       };
       break;
@@ -83,16 +82,9 @@ function ItemLists({ type }) {
     <div className="item_listss">
       <div className="name">
         <p>{data.title}</p>
-        <span className="percentage positive">
-          <KeyboardArrowUpIcon />
-          20%
-        </span>
       </div>
 
-      <div className="counts">
-        {data.isMoney && <AttachMoneyOutlinedIcon />}
-        {data.count}
-      </div>
+      <div className="counts">{data.count}</div>
 
       <div className="see_item">
         <Link to={data.linkto}>
