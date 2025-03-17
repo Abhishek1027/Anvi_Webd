@@ -11,7 +11,6 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ColorContext } from "../../ColorContext/darkContext";
 import "./Sidebar.scss";
-import Anvi from "../../../images/anvi-logo-1.png";
 
 function Sidebar() {
   // color state management using react context
@@ -19,7 +18,6 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
-<<<<<<< Updated upstream
     <div className="logo">
       <Link to="/" style={{ textDecoration: "none" }}>
         <h3 className="text_none">anvi</h3>
@@ -27,15 +25,6 @@ function Sidebar() {
     </div>
   
 
-=======
-      <div className="logo">
-        <img
-          src={Anvi}
-          alt="Anvi Logo"
-          style={{ width: "200px", height: "auto" }}
-        />
-      </div>
->>>>>>> Stashed changes
       <div className="links">
         <ul>
           <p className="spann">Main</p>

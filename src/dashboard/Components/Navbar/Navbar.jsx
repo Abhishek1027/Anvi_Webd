@@ -61,10 +61,10 @@ function Navbar() {
         </div>
 
         <div className="item_lists">
-          {/*<div className="item item_lan">
+          <div className="item item_lan">
             <LanguageIcon className="item_icon" fontSize="small" />
             <p>English</p>
-          </div>*/}
+          </div>
           <div className="item">
             {!darkMode ? (
               <DarkModeIcon
@@ -80,7 +80,7 @@ function Navbar() {
               />
             )}
           </div>
-          {/*<div className="item">
+          <div className="item">
             <FullscreenExitIcon className="item_icon" fontSize="small" />
           </div>
 
@@ -91,7 +91,7 @@ function Navbar() {
           <div className="item">
             <NotificationsNoneIcon className="item_icon" fontSize="small" />
             <span className="badge">1</span>
-          </div>*/}
+          </div>
 
           <div className="item">
             <img className="admin_pic" src={admin} alt="admin" />
