@@ -16,15 +16,6 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
-<<<<<<< HEAD
-=======
-      <div className="logo">
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <h3 className="text_none">anvi</h3>
-        </Link>
-      </div>
-
->>>>>>> a9329301900b8e981d51fa2c649256a2a09c89ec
       <div className="links">
         <ul>
           <p className="spann">Main</p>
