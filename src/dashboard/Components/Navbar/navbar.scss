@@ -1,11 +1,11 @@
 .navbar {
-  position: fixed;  // ✅ Ensures Navbar stays on top
+  position: fixed; // ✅ Ensures Navbar stays on top
   top: 0;
   left: 0;
   width: 100%;
   height: 60px;
   background: white;
-  z-index: 1000;  // ✅ Ensures it's above Sidebar
+  z-index: 1000; // ✅ Ensures it's above Sidebar
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,7 +108,7 @@
       border-bottom: 1px solid #eee;
 
       .menu_logo {
-        display: flex !important;  // ✅ Ensures menu is visible on small screens
+        display: flex !important; // ✅ Ensures menu is visible on small screens
       }
     }
 

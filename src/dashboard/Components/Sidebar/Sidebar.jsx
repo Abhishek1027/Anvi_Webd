@@ -18,12 +18,11 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
-    <div className="logo">
-      <Link to="/" style={{ textDecoration: "none" }}>
-        <h3 className="text_none">anvi</h3>
-      </Link>
-    </div>
-  
+      <div className="logo">
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <h3 className="text_none">anvi</h3>
+        </Link>
+      </div>
 
       <div className="links">
         <ul>

@@ -37,20 +37,6 @@ function Navbar() {
     <div className="navbar">
       <div className="navbar_main">
         <div className="menu_logo">
-          {toggle ? (
-            <CloseIcon
-              className="menu_icon"
-              fontSize="small"
-              onClick={handleToggle}
-            />
-          ) : (
-            <MenuIcon
-              className="menu_icon"
-              fontSize="small"
-              onClick={handleToggle}
-            />
-          )}
-
           <Link to="/" style={{ textDecoration: "none" }}>
             <h3 className="text_none">anvi</h3>
           </Link>
@@ -61,10 +47,10 @@ function Navbar() {
         </div>
 
         <div className="item_lists">
-          <div className="item item_lan">
+          {/*<div className="item item_lan">
             <LanguageIcon className="item_icon" fontSize="small" />
             <p>English</p>
-          </div>
+          </div>*/}
           <div className="item">
             {!darkMode ? (
               <DarkModeIcon
@@ -80,7 +66,7 @@ function Navbar() {
               />
             )}
           </div>
-          <div className="item">
+          {/*<div className="item">
             <FullscreenExitIcon className="item_icon" fontSize="small" />
           </div>
 
@@ -91,7 +77,7 @@ function Navbar() {
           <div className="item">
             <NotificationsNoneIcon className="item_icon" fontSize="small" />
             <span className="badge">1</span>
-          </div>
+          </div>*/}
 
           <div className="item">
             <img className="admin_pic" src={admin} alt="admin" />
