@@ -21,36 +21,41 @@
   }
 
   .menu_logo {
-    display: flex !important; // ✅ Ensure menu is visible
+    display: flex !important;
     align-items: center;
-
+  
     .menu_icon {
       cursor: pointer;
       color: #3d3c42e1;
+      margin-right: 10px;
     }
-
-    .text_none {
-      margin-left: 10px;
-      color: #4665fdde;
-      font-size: 35px;
-      font-weight: bold;
+  
+    .navbar_logo {
+      width: 120px;  // Adjust size as needed
+      height: auto;
+      object-fit: contain;
     }
   }
+  
 
   .search {
+    flex-grow: 1;  // Allow search bar to expand
+    max-width: 400px;  // Set a max width
+    margin-left: auto;  // Push to the right
     display: flex;
     align-items: center;
     border-radius: 3px;
     border: 1px solid #3d3c42e1;
     position: relative;
-
+  
     input {
       border: none;
       outline: none;
       font-size: 14px;
       padding: 6px 10px;
+      width: 100%;
     }
-
+  
     .search_icon {
       cursor: pointer;
       color: #3d3c42e1;
@@ -58,7 +63,7 @@
       right: 5px;
     }
   }
-
+  
   .item_lists {
     display: flex;
     align-items: center;

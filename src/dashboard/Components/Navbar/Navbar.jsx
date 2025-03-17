@@ -18,6 +18,7 @@ import TableChartIcon from "@mui/icons-material/TableChart";
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { ColorContext } from "../../ColorContext/darkContext";
+import Anvi from "../../Images/anvi-logo-1.jpg";
 
 // Import styles
 import "./navbar.scss";
@@ -37,24 +38,16 @@ function Navbar() {
     <div className="navbar">
       <div className="navbar_main">
         <div className="menu_logo">
-          {toggle ? (
-            <CloseIcon
-              className="menu_icon"
-              fontSize="small"
-              onClick={handleToggle}
-            />
-          ) : (
-            <MenuIcon
-              className="menu_icon"
-              fontSize="small"
-              onClick={handleToggle}
-            />
-          )}
-
+          {/* Replace "anvi" text with the logo */}
           <Link to="/" style={{ textDecoration: "none" }}>
-            <h3 className="text_none">anvi</h3>
+            <img
+              src={Anvi} // Adjust path as needed
+              alt="Anvi Logo"
+              className="navbar_logo"
+            />
           </Link>
         </div>
+
         <div className="search">
           <input type="text" placeholder="Search.." />
           <SearchIcon className="search_icon" fontSize="small" />

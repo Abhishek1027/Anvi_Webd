@@ -1,4 +1,5 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
@@ -7,35 +8,14 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import PersonIcon from "@mui/icons-material/Person";
 import SettingsRoundedIcon from "@mui/icons-material/SettingsRounded";
 import TableChartIcon from "@mui/icons-material/TableChart";
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 import { ColorContext } from "../../ColorContext/darkContext";
 import "./Sidebar.scss";
-import Anvi from "../../../images/anvi-logo-1.png";
 
 function Sidebar() {
-  // color state management using react context
   const { darkMode, dispatch } = useContext(ColorContext);
 
   return (
     <div className="sidebar">
-<<<<<<< Updated upstream
-    <div className="logo">
-      <Link to="/" style={{ textDecoration: "none" }}>
-        <h3 className="text_none">anvi</h3>
-      </Link>
-    </div>
-  
-
-=======
-      <div className="logo">
-        <img
-          src={Anvi}
-          alt="Anvi Logo"
-          style={{ width: "200px", height: "auto" }}
-        />
-      </div>
->>>>>>> Stashed changes
       <div className="links">
         <ul>
           <p className="spann">Main</p>
@@ -45,7 +25,7 @@ function Sidebar() {
             </li>
           </Link>
 
-          <p className="spann">lists</p>
+          <p className="spann">Lists</p>
           <Link to="/feed" style={{ textDecoration: "none" }}>
             <li>
               <PersonIcon className="icon" /> RobotFeed
@@ -67,7 +47,7 @@ function Sidebar() {
             <BarChartIcon className="icon" /> Temperature
           </li>
 
-          <p className="spann">Seetings</p>
+          <p className="spann">Settings</p>
           <li>
             <AccountCircleIcon className="icon" /> Profile
           </li>
