@@ -52,7 +52,7 @@ function Navbar() {
           )}
 
           <Link to="/" style={{ textDecoration: "none" }}>
-            <h3 className="text_none">Dashboard</h3>
+            <h3 className="text_none">anvi</h3>
           </Link>
         </div>
         <div className="search">

@@ -50,7 +50,7 @@ const userInpDetails = [
     placeholder: "Password",
     required: true,
     pattern:
-      "^(?=.*[0-9])(?=.*[A-Za-z])(?=.*[!@#$%^&*()_+])[A-Za-z0-9!@#$%^&*()_+]{6,20}$",
+      "^(?=.[0-9])(?=.[A-Za-z])(?=.[!@#$%^&()+])[A-Za-z0-9!@#$%^&*()+]{6,20}$",
     errorMsg:
       "Password should be 6-20 characters and include at last 1 num, 1 letter, 1 special character!",
   },
@@ -155,8 +155,8 @@ const Dashboard = () => {
           <Route index element={<Lists type="user" />} />
           <Route path=":userId" element={<Detail />} />
           <Route
-            path="addnew"
-            element={
+              path="addnew"
+              element={
               <AddNew inputs={blogInputs} titlee="Add New Blog" type="BLOG" />
             }
           />
@@ -187,7 +187,11 @@ const Dashboard = () => {
           <Route
             path="addnew"
             element={
-              <AddNew inputs={blogInputs} titlee="Add New Blog" type="BLOG" />
+              <AddNew
+                inputs={blogInputs}
+                titlee="Add New Blog"
+                type="BLOG"
+              />
             }
           />
         </Route>
@@ -196,4 +200,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Dashboard;
