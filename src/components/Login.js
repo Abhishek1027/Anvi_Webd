@@ -11,6 +11,8 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -21,14 +23,14 @@ const Login = () => {
         password === "password"
       ) {
         alert("Developer Login Successful!");
-        window.open("/dashboard", "_blank");
+        navigate("/dashboard");
       } else {
         setError("Invalid Name, Email, or Password.");
       }
     } else {
       if (customerId === "12345" && password === "password") {
         alert("User Login Successful!");
-        window.open("/dashboard", "_blank");
+        navigate("/dashboard");
       } else {
         setError("Invalid Customer ID or Password.");
       }
@@ -43,7 +45,6 @@ const Login = () => {
       <form onSubmit={handleSubmit}>
         {error && <p className="error">{error}</p>}
 
-        {/* User Login Fields */}
         {!isDeveloperLogin ? (
           <>
             <input
@@ -63,7 +64,6 @@ const Login = () => {
           </>
         ) : (
           <>
-            {/* Developer Login Fields */}
             <input
               type="text"
               placeholder="Name"
@@ -91,7 +91,6 @@ const Login = () => {
         <button type="submit">Login</button>
       </form>
 
-      {/* Toggle between User and Developer login */}
       <p
         className="switch-login"
         onClick={() => setIsDeveloperLogin(!isDeveloperLogin)}
